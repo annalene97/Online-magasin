@@ -1,0 +1,310 @@
+/* RESET (ISH) */
+* {
+    margin: 0px;
+    padding: 0;
+}
+
+ /* WEBSITE-FARVER */
+:root{
+    --d-blue: #0b3148;
+    --l-blue: #daedfa;
+    --orange: #ff784f;
+    --yellow: #ffbc1f;
+    --green: #5f9d88;
+    --purple: #ceb8dd;
+}
+
+/* GENERELT */
+
+body {
+    background-color: white;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* HEADER */
+
+header{
+   background-color: var(--purple);
+    position:fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+header div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding-left: 40px;
+}
+
+header div img {
+    width: 60px;
+    height: 60px;
+}
+header div p a{
+    display: block;
+    font-family: 'Poetsen One', sans-serif;
+    font-size: 30px;
+    color: var(--d-blue);
+}
+
+/* NAV -> MENUPUNKTER */
+nav ul{
+    width: 800px;
+    list-style: none;
+    text-align: right;
+    display: flex;
+    justify-content:space-between;
+    padding-right: 40px;
+}
+
+nav ul li a {
+    display: block;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400; 
+    font-size: 18px;
+    color: white;
+    padding: 17px 10px;
+}
+
+nav ul li a:hover {
+    
+    text-decoration: underline;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: var(--purple);
+    border-radius: 0 0 8px 8px;
+    width: 140px;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li {
+    width: 140px;
+}
+
+nav ul li ul li a {
+    font-size: 15px;
+    border-radius: 0 0 8px 8px;
+    color: white;
+    text-align: left;
+}
+
+nav ul li ul li a:hover{
+    text-decoration: underline;
+    width: 140px;
+}
+
+/* ARTIKEL - INTRO */
+
+.intro-cnt {
+    width: 100%;
+    margin-top: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-cnt img {
+    width: 450px;
+    margin-left: -30px;
+}
+
+.overskrift-cnt {
+    display: flex;
+    flex-direction: column;
+}
+
+.overskrift-cnt #eyebrow {
+    font-family: oswald;
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--d-blue);
+}
+
+.overskrift-cnt h1 {
+    font-family: 'Orelega One', serif;
+    font-size: 54px;
+    color: var(--orange);
+}
+
+.overskrift-cnt #overskrift-p {
+    font-family: oswald;
+    font-size: 25px;
+    font-weight: 300;
+    color: var(--d-blue);
+    padding: 20px 0;
+}
+
+.overskrift-cnt #workshop-kontakt {
+    font-family: oswald;
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--d-blue);
+}
+
+.overskrift-cnt #workshop-kontakt a {
+    color: var(--orange);
+}
+
+.overskrift-cnt #workshop-kontakt a:hover {
+    text-decoration: underline;
+}
+
+/* ARTIKEL - WORKSHOPS */
+#udvalg {
+    margin: 60px 0;
+}
+
+.workshop-cnt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+    gap: 4rem;
+}
+
+#workshop-cnt2 {
+    margin-top: 60px;
+}
+
+.workshop {
+    width: 290px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--l-blue);
+    border-radius: 30px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 5px;
+}
+  
+.workshop img {
+    width: 80px;
+    height: 80px;
+    border-radius: 30px;
+    background-color: white;
+    padding: 16px;
+    margin-top: 40px;
+}
+  
+.workshop-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0 30px 0;
+}
+
+.workshop-main h3 {
+    text-align: center;
+    font-family: oswald;
+    font-size: 23px;
+    font-weight: 600;
+    color: var(--d-blue);
+    padding-bottom: 6px;
+}
+
+.workshop-main p {
+    text-align: center;
+    font-family: oswald;
+    font-size: 17px;
+    font-weight: 300;
+    color: var(--d-blue);
+}
+
+.workshop-main p a {
+    font-family: Oswald;
+    text-decoration: underline;
+    color: var(--d-blue);
+}
+
+.workshop-main p a:hover{
+    color: var(--orange);
+}
+  
+/* FOOTER */
+footer {
+    background-color: var(--d-blue);
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    z-index: 0;
+}
+
+footer .footer-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    padding-left: 40px;
+}
+
+footer .footer-logo img {
+    width: 60px;
+    height: 60px;
+}
+footer .footer-logo p a{
+    display: block;
+    font-family: 'Poetsen One', sans-serif;
+    font-size: 25px;
+    color: var(--orange);
+}
+
+footer .kontakt p {
+    font-family: oswald;
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+}
+#kontaktos {
+    padding-bottom: 10px;
+}
+
+footer .kontakt p a {
+    font-family: oswald;
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+}
+
+footer .sm {
+    padding-right: 80px;
+}
+
+footer .sm p {
+    font-family: oswald;
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+footer .sm-logo {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+footer .sm a img {
+    width: 35px;
+}

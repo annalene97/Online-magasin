@@ -1,0 +1,336 @@
+/* RESET (ISH) */
+* {
+    margin: 0px;
+    padding: 0;
+}
+
+ /* WEBSITE-FARVER */
+:root{
+    --d-blue: #0b3148;
+    --l-blue: #daedfa;
+    --orange: #ff784f;
+    --yellow: #ffbc1f;
+    --green: #5f9d88;
+    --purple: #ceb8dd;
+}
+
+/* GENERELT */
+
+body {
+    background-color: white;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* HEADER */
+
+header{
+   background-color: var(--green);
+    position:fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+header div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding-left: 40px;
+}
+
+header div img {
+    width: 60px;
+    height: 60px;
+}
+header div p a{
+    display: block;
+    font-family: 'Poetsen One', sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+/* NAV -> MENUPUNKTER */
+nav ul{
+    width: 800px;
+    list-style: none;
+    text-align: right;
+    display: flex;
+    justify-content:space-between;
+    padding-right: 40px;
+}
+
+nav ul li a {
+    display: block;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400; 
+    font-size: 18px;
+    color: white;
+    padding: 17px 10px;
+}
+
+nav ul li a:hover {
+    
+    text-decoration: underline;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: var(--green);
+    border-radius: 0 0 8px 8px;
+    width: 140px;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li {
+    width: 140px;
+}
+
+nav ul li ul li a {
+    font-size: 15px;
+    border-radius: 0 0 8px 8px;
+    color: white;
+    text-align: left;
+}
+
+nav ul li ul li a:hover{
+    text-decoration: underline;
+    width: 140px;
+}
+
+/* ARTIKEL - Manchet + rubrik */
+
+.intro-cnt {
+    width: 100%;
+    margin-top: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.intro-cnt img {
+    width: 450px;
+}
+
+.overskrift-cnt {
+    display: flex;
+    flex-direction: column;
+    padding-right: 4%;
+}
+
+.overskrift-cnt #eyebrow {
+    font-family: oswald;
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--d-blue);
+}
+
+.overskrift-cnt div {
+    display: flex;
+}
+
+.overskrift-cnt div h1 {
+    font-family: 'Orelega One', serif;
+    font-size: 55px;
+    color: var(--orange);
+}
+
+.overskrift-cnt div p {
+    font-family: 'Orelega One', serif;
+    font-size: 190px;
+    color: var(--orange);
+    line-height: 100px;
+}
+
+.overskrift-cnt #workshop-link {
+    font-family: oswald;
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--d-blue);
+}
+
+.overskrift-cnt #overskrift-p {
+    font-family: oswald;
+    font-size: 25px;
+    font-weight: 300;
+    color: var(--d-blue);
+    padding: 20px 0;
+}
+
+.overskrift-cnt #workshop-link {
+    font-family: oswald;
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--d-blue);
+}
+
+.overskrift-cnt #workshop-link a {
+    color: var(--orange);
+}
+
+.overskrift-cnt #workshop-link a:hover {
+    text-decoration: underline;
+}
+
+
+/* ARTIKEL SEKTIONER */
+
+.råd-cnt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.råd {
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+}
+
+.råd .nummer {
+    font-family: 'Orelega One', serif;
+    font-size: 100px;
+    color: var(--d-blue);
+    line-height: 90px;
+    padding-right: 20px;
+}
+
+.råd h2 {
+    font-size: 30px;
+    font-family: Oswald;
+    font-weight: 600;
+    color: var(--d-blue);
+}
+
+.råd p {
+    font-size: 17px;
+    font-family: Oswald;
+    font-weight: 300;
+    color: var(--d-blue);
+}
+
+.råd ul {
+    padding-left: 5px;
+}
+
+#råd2 div ul li {
+    font-size: 17px;
+    font-family: Oswald;
+    font-weight: 300;
+    color: var(--d-blue);
+    list-style-position: inside;
+}
+
+#råd1 {
+    padding-right: 10%;
+}
+
+#råd2 {
+    padding-left: 10%;
+}
+
+#råd3 {
+    padding-right: 10%;
+}
+
+#råd4 {
+    padding-left: 10%;
+}
+
+#råd5 {
+    padding-right: 10%;
+    padding-bottom: 80px;
+}
+.råd div a {
+    color: var(--green);
+    font-weight: 400;
+}
+
+.råd div a:hover {
+    text-decoration: underline;
+}
+
+
+/* FOOTER */
+footer {
+    background-color: var(--d-blue);
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+
+footer .footer-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    padding-left: 40px;
+}
+
+footer .footer-logo img {
+    width: 60px;
+    height: 60px;
+}
+footer .footer-logo p a{
+    display: block;
+    font-family: 'Poetsen One', sans-serif;
+    font-size: 25px;
+    color: var(--orange);
+}
+
+footer .kontakt p {
+    font-family: oswald;
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+}
+#kontaktos {
+    padding-bottom: 10px;
+}
+
+footer .kontakt p a {
+    font-family: oswald;
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+}
+
+footer .sm {
+    padding-right: 80px;
+}
+
+footer .sm p {
+    font-family: oswald;
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+footer .sm-logo {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+footer .sm a img {
+    width: 35px;
+}
